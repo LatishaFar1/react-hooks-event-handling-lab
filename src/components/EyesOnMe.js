@@ -1,18 +1,15 @@
 // Code EyesOnMe Component Here
 import React from "react";
 
-function EyesOnMe(){
-    function eyesButton(event){
-        console.log(event);
-    }
-    return(
-    <button onBlur={console.log("Hey! Eyes on me!")} onFocus={console.log("Good!")}>Eyes On Me</button>
+function EyesOnMe() {
 
+    return (
+        <button 
+        onFocus={event => console.log('Good!')} 
+        onBlur={event => console.log('Hey! Eyes on me!')}>
+        Eyes on me
+        </button>
     );
-    
 };
-
-
-
 
 export default EyesOnMe;
